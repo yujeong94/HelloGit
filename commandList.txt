@@ -13,3 +13,5 @@ git command
     -- difftool 보다는 git graph등 깔아서 보는게 편함
     git branch 브랜치명 : 프로젝트 사본. 로컬 커밋이라고 생각
     git switch 브랜치명 : 원하는 branch로 이동
+    git branch -d 브랜치명 : 병합 완료된 브랜치 삭제
+    git branch -D 브랜치명 : 병합하지 않은 브랜치 삭제
