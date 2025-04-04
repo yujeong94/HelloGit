@@ -49,3 +49,9 @@
         git reset --soft 커밋아이디 : 커밋아이디 시점으로 되돌리지만 변동사항이 staging 됨. 다시 commit 가능
         git reset --mixed 커밋아이디 : 변동사항 staging되지 않은 상태로 되돌아감. 다시 add 후 commit 가능
                                     git reset 커밋아이디만 하면 --mixed와 동일
+
+3. .gitignore
+    commit에서 제외할 파일 명시해놓기
+    git add . 해도 포함되지 않아서 편함
+    node_modules 나 개인정보가 포함된 .env 파일은 안올려도 됨
+    (package.json 파일만 잘 있으면 npm install로 재설치 가능)
