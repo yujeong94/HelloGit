@@ -1,0 +1,7 @@
+git command
+    git add 파일명.파일확장자 : 커밋 할 파일 골라 놓는 것 (스테이징)
+    git commit -m '내용' : 스테이징한 파일 저장소에 설명(내용) 달아서 저장
+    git add 파일명.파일확장자 파일명.파일확장자 : 여러 파일 스테이징
+    git add . : 모든 파일 스테이징
+    git status : 어떤 파일들을 스테이징 해놓았는지, 수정했는지 확인 가능
+    git log --all --oneline : commit 히스토리
