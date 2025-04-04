@@ -7,4 +7,4 @@ haha
 --main branch에서 conflict 발생시키기
 --side branch에서 conflict 발생시키기
 
---main 변경
+--basenote branch 생성 후 main branch 신규 commit 추가
