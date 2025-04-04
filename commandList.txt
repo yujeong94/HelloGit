@@ -10,3 +10,5 @@ git command
     git difftool : 변경사항을 화면으로 보여줌
     :q : difftool 종료 명령어 (반복 입력해야 종료됨)
     -- difftool 보다는 git graph등 깔아서 보는게 편함
+    git branch 브랜치명 : 프로젝트 사본. 로컬 커밋이라고 생각
+    git switch 브랜치명 : 원하는 branch로 이동
