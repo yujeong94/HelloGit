@@ -55,3 +55,16 @@
     git add . 해도 포함되지 않아서 편함
     node_modules 나 개인정보가 포함된 .env 파일은 안올려도 됨
     (package.json 파일만 잘 있으면 npm install로 재설치 가능)
+
+4. 원격저장소에서 소스 가져오기
+    4-1.clone (git clone 원격저장소 주소)
+        초기 세팅을 위해 repository 그대로 가져오기 
+    4-2.pull (git pull 원격저장소 주소)
+        현재 원격저장소 코드 가져오기
+        git pull 변수명 브랜치명 : 특정 브랜치만 가져오기
+        git pull은 자동으로 git fetch+git merge 작업을 함
+        git fetch : 원격저장소 commit 중 신규 commit 가져오기
+        git merge : 신규 commit local이랑 합치기
+    * 변수명 등록해놨거나 -u 했으면 git pull 변수명 혹은 git pull 만 해도 됨
+    * git push 전에 git pull 부터! 원격저장소에 신규 commit 내용 있으면 push 안됨
+      

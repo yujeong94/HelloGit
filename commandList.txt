@@ -33,5 +33,7 @@ git command
     git remote add 변수명 원격저장소주소 : 원격저장소 주소를 변수명으로 활용 가능
                                       git push -u 변수명 main으로 사용 가능
     git remote -v : 변수 리스트 확인
-    git clone 원격저장소주소 : 원격저장소 코드 받아오기
+    git clone 원격저장소주소 : 처음에 원격저장소 코드 가져오기
+    git pull 원격저장소주소 : 현재 원격저장소 코드 가져오기
+    git pull 원격저장소주소 브랜치명 : 특정 브랜치만 가져오기
     
