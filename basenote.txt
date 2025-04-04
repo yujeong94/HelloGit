@@ -17,3 +17,4 @@
                git rebase main
                git switch main
                git merge 신규브랜치
+    1-4.squash and merge
