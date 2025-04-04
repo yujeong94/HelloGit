@@ -56,7 +56,7 @@
     node_modules 나 개인정보가 포함된 .env 파일은 안올려도 됨
     (package.json 파일만 잘 있으면 npm install로 재설치 가능)
 
-4. 원격저장소에서 소스 가져오기
+4.원격저장소에서 소스 가져오기
     4-1.clone (git clone 원격저장소 주소)
         초기 세팅을 위해 repository 그대로 가져오기 
     4-2.pull (git pull 원격저장소 주소)
@@ -67,4 +67,15 @@
         git merge : 신규 commit local이랑 합치기
     * 변수명 등록해놨거나 -u 했으면 git pull 변수명 혹은 git pull 만 해도 됨
     * git push 전에 git pull 부터! 원격저장소에 신규 commit 내용 있으면 push 안됨
-      
+
+5.stash
+    코드 임시 보관장소 
+    git stash 하면 최근 commit 이후로 돌아가고 commit 이후 작성한 코드는 임시 저장됨
+    staging된 것이든 아니든 추적 중인 파일은 다 저장됨. 다만, 신규 파일의 경우 staging 안되어있으면 저장안됨
+    git stash save "메모" 해서 수정내용 작성할 수 있음
+    git stash list : 임시 저장된 코드 목록
+    git stash pop : 가장 최근에 저장했던 파일부터 불러옴
+    git stash drop 삭제할id : stash list의 해당 id 삭제됨
+    git stash clear : 모두 삭제
+    git stash -p : 파일 전체가 아닌 일부 코드만 저장할 때 사용. 파일 훑어주는데 y/n 잘 하면 됨
+    ---> branch 만들어서 보관하는거랑 같은 행위임
