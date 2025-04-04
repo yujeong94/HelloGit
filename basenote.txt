@@ -21,4 +21,4 @@
         단점은 브랜치끼리 차이가 많이 날 경우 conflict 발생할 확률이 큼
     1-4.squash and merge
         신규 브랜치의 commit들을 하나의 commit으로 합쳐 기준 브랜치에 추가
-        
+        신규 브랜치의 모든 commit 이력들이 main log에 남지 않아 log가 더러워지지 않음
