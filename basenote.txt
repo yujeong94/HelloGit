@@ -25,3 +25,24 @@
         사용법 : git switch main 
                 git merge --squash 브랜치명
                 git commit -m '메시지'
+
+2.restore, revert, reset
+    2-1.restore
+        특정 파일을 되돌리고 싶을 때 사용
+        git restore 파일명 : 최근 commit 시점으로 복구
+        git restore --source 커밋아이디 파일명 : 커밋아이디 시점으로 복구
+        git restore --staged 파일명 : 특정 파일의 staging 취소
+    2-2.revert
+        commit 시점을 되돌리고 싶을 때 사용
+        git revert 커밋아이디 : 해당 커밋아이디 시점에 일어난 일만 취소되고 커밋아이디 이후는 살아있음
+        -> 실행 후 에디터 뜨면 커밋메시지 수정하고 닫으면 됨
+        -> vim 에디터가 뜨면 i 눌러서 글자 수정하고 :wq 누르면 저장. 싫으면 esc
+        git revert 커밋아이디1 커밋아이디2 : 커밋아이디 여러개 가능
+        git revert HEAD : 가장 최근 커밋 취소
+    2-3.reset
+        특정 commit 시점으로 전부 되돌림
+        git reset --hard 커밋아이디 : 커밋아이디 시점으로 전부 되돌림 그 이후는 사라짐, 다만 git add 안한 파일은 살아있음
+                                   git clean 명령어 찾아 사용하면 git add 안한 파일도 모두 삭제 가능
+        git reset --soft 커밋아이디 : 커밋아이디 시점으로 되돌리지만 변동사항이 staging 됨. 다시 commit 가능
+        git reset --mixed 커밋아이디 : 변동사항 staging되지 않은 상태로 되돌아감. 다시 add 후 commit 가능
+                                    git reset 커밋아이디만 하면 --mixed와 동일
