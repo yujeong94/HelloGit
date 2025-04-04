@@ -11,3 +11,5 @@ haha
 --main 추가 수정
 
 -- basenote 수정 후 main 수정
+
+-- squash test
