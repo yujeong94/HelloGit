@@ -5,3 +5,8 @@ git command
     git add . : 모든 파일 스테이징
     git status : 어떤 파일들을 스테이징 해놓았는지, 수정했는지 확인 가능
     git log --all --oneline : commit 히스토리
+    git diff : 변경사항 보여줌
+    git diff 파일1 파일2 : 파일1과 파일2의 차이 보여줌
+    git difftool : 변경사항을 화면으로 보여줌
+    :q : difftool 종료 명령어 (반복 입력해야 종료됨)
+    -- difftool 보다는 git graph등 깔아서 보는게 편함
