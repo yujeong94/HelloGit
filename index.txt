@@ -5,3 +5,4 @@ haha
 --side branch에서 update
 
 --main branch에서 conflict 발생시키기
+--side branch에서 conflict 발생시키기
